@@ -1,4 +1,5 @@
 arch-lifeguard-ng
 =================
 
-lifeguard service
+PKGBUILD for lifeguard-ng:
+https://github.com/seahawk1986/lifeguard-ng
