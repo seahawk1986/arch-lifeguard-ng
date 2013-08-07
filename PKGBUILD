@@ -6,7 +6,9 @@ pkgdesc="check for active services via dbus"
 arch=('x86_64')
 url="https://github.com/seahawk1986/lifeguard-ng"
 license=('GPL')
-depends=('python-gobject' 'python-dbus' 'python-dateutil')
+depends=('python-gobject' 'python-dbus' 'python-psutil')
+optdepends=('samba: detect active Samba shares'
+            'nfs-utils: detect active NFS shares')
 provides=('$pkgname')
 backup=("etc/lifeguard.conf")
 source=(git://github.com/seahawk1986/lifeguard-ng.git)
