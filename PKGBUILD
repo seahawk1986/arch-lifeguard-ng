@@ -21,7 +21,7 @@ package() {
   install -Dm755 check-lifeguard "$pkgdir/usr/bin/check-lifeguard"
   install -Dm644 lifeguard.conf  "$pkgdir/etc/lifeguard.conf"
   install -Dm644 lifeguard.service "${pkgdir}"/usr/lib/systemd/system/lifeguard.service
-  install -Dm644 org.yavdr.lifeguard "${pkgdir}"/etc/dbus-1/system.d/org.yavdr.lifeguard.conf
+  install -Dm644 org.yavdr.lifeguard.conf "${pkgdir}"/etc/dbus-1/system.d/org.yavdr.lifeguard.conf
 }
 
 # vim:set ts=2 sw=2 et:
